@@ -1,5 +1,16 @@
 #Desplegar un API rest con python y Flask desde Elastic Beanstalk
 
+Antes de todo, instalemos este repositorio en nuestra máquina local:
+
+git clone git@github.com:ccortezb/eb-awsroadshow-flask-demo.git
+
+total 24
+-rw-r--r--  1 carlos  staff   2.9K Jun 30 22:42 README.md
+-rw-r--r--  1 carlos  staff   1.1K Jun 30 22:15 application.py
+-rw-r--r--  1 carlos  staff    95B Jun 30 22:14 requirements.txt
+drwxr-xr-x  6 carlos  staff   192B Jun 30 22:13 virt
+
+Ahora a aprender!
 
 ## primero instalemos las dependencias
 
