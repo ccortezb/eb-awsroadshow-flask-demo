@@ -1,4 +1,11 @@
-#Desplegar un API rest con python y Flask desde Elastic Beanstalk
+##Desplegar un API rest con python y Flask desde Elastic Beanstalk
+
+## Hola a todos!
+
+Soy Carlos Cortez y aprenderemos elastic beanstalk desde cero. Espero lo disfruten!
+
+
+## Clonando el repositorio base
 
 Antes de todo, instalemos este repositorio en nuestra máquina local:
 
@@ -31,14 +38,14 @@ y luego con brew en MacOS:
 ### si somos práctico y usamos pip (nosotros!)
 
 > pip install awsebcli --upgrade --user
-> 
+
 > eb --version
 
 
 ## Instalamos virtualenv
 
 > pip3 install virtualenv
-> 
+
 > source virt/bin/activate
 
 
@@ -53,7 +60,7 @@ y luego con brew en MacOS:
 
 > pip freeze > requirements.txt
 
-(virt) ➜  eb-flask ll
+ll
 total 8
 -rw-r--r--  1 carlos  staff    95B Jun 30 22:14 requirements.txt
 drwxr-xr-x  6 carlos  staff   192B Jun 30 22:13 virt
@@ -66,7 +73,6 @@ y luego corremos en local para probar:
 
 >  python application.py
 
-> (virt) ➜  eb-flask python application.py
  * Serving Flask app "application" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
@@ -80,21 +86,21 @@ y luego corremos en local para probar:
 
 ## probamos desde el browser
 
-http://127.0.0.1:5000/hello
+> http://127.0.0.1:5000/hello
 
 
 ## Creamos un archivo para evitar subir las dependencias
 
-(virt) ➜  eb-flask vim .ebignore
+> vim .ebignore
 virt
 
 ## Creamos una nueva app en Elastic beanstalk 
 
-(virt) ➜  eb-flask eb init -p python-3.7 flask-roadshow --region us-east-1
+> eb init -p python-3.7 flask-roadshow --region us-east-1
 Application flask-roadshow has been created.
 
 ##  creamos un acceso para poder entrar por ssh 
-(virt) ➜  eb-flask eb init
+> eb init
 Cannot setup CodeCommit because there is no Source Control setup, continuing with initialization
 Do you want to set up SSH for your instances?
 (Y/n): Y
@@ -118,7 +124,8 @@ Select a keypair.
 
 ## desplegamos la app a Elastic Beanstalk
 
-(virt) ➜  eb-flask eb create flask-env
+> eb create flask-env
+
 Creating application version archive "app-200630_222146".
 Uploading flask-roadshow/app-200630_222146.zip to S3. This may take a while.
 Upload Complete.
@@ -134,7 +141,7 @@ Environment details for: flask-env
 
 ## podemos visitar nuestro nuevo sitio
 
-(virt) ➜  eb-flask eb open
+> eb open
 
 
 http://flask-env.eba-i5ckdi5n.us-east-1.elasticbeanstalk.com/
