@@ -130,18 +130,18 @@ Select a keypair.
 
 > eb create flask-env
 
-> Creating application version archive "app-200630_222146".
-> Uploading flask-roadshow/app-200630_222146.zip to S3. This may take a while.
-> Upload Complete.
-> Environment details for: flask-env
->   Application name: flask-roadshow
->   Region: us-east-1
->   Deployed Version: app-200630_222146
->   Environment ID: e-sbzi93wy52
->   Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Python 3.7 running on 64bit Amazon Linux 2/3.0.3
->   Tier: WebServer-Standard-1.0
->   CNAME: UNKNOWN
->   Updated: 2020-07-01 03:21:52.814000+00:00
+ Creating application version archive "app-200630_222146".
+ Uploading flask-roadshow/app-200630_222146.zip to S3. This may take a while.
+ Upload Complete.
+ Environment details for: flask-env
+   Application name: flask-roadshow
+   Region: us-east-1
+   Deployed Version: app-200630_222146
+   Environment ID: e-sbzi93wy52
+   Platform: arn:aws:elasticbeanstalk:us-east-1::platform/Python 3.7 running on 64bit Amazon Linux 2/3.0.3
+   Tier: WebServer-Standard-1.0
+   CNAME: UNKNOWN
+   Updated: 2020-07-01 03:21:52.814000+00:00
 
 ## podemos visitar nuestro nuevo sitio
 
